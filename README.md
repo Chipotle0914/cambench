@@ -1,4 +1,4 @@
-cambench
+#cambench
 
 A tiny C++/OpenCV benchmarking & A/B validation tool for simple video pipelines.
 It can:
