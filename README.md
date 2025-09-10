@@ -31,12 +31,12 @@ cmake --build build -j
 
 ### 2) Run pipeline A (smaller blur kernel → sharper edges)
 ```
-./build/bin/cambench run --config ./configs/a_fast.yaml
+./bin/cambench run --config ../configs/a_fast.yaml
 ```
 
 ### 3) Run pipeline B (larger blur kernel → smoother edges)
 ```
-./build/bin/cambench run --config ./configs/b_quality.yaml
+./bin/cambench run --config ../configs/b_quality.yaml
 ```
 
 ### 4) Validate A vs B (PSNR/SSIM thresholds)
