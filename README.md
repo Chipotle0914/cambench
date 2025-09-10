@@ -42,23 +42,23 @@ cd build/
 
 ### 4) Validate A vs B (PSNR/SSIM thresholds)
 ```
-./build/bin/cambench validate \
-  --ref ./out/run_b \
-  --test ./out/run_a \
-  --out ./out/validate_ab \
+./bin/cambench validate \
+  --ref ../out/run_b \
+  --test ../out/run_a \
+  --out ../out/validate_ab \
   --psnr-min 30 \
   --ssim-min 0.95
 ```
 ### 5) One-liner without YAML
 ```
-./build/bin/cambench run \
-  --input ./data/2_ppl_running.mp4 \
-  --out ./out/run_cli \
+./bin/cambench run \
+  --input ../data/2_ppl_running.mp4 \
+  --out ../out/run_cli \
   --frames 300 --warmup 20 --width 640 --height 360 --save \
   --blur-ksize 5
 ```
 ### 6) Clean outputs and re-run
 ```
-rm -rf ./out/*
+rm -rf ../out/*
 ```
 
