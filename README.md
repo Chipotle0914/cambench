@@ -1,14 +1,17 @@
-#cambench
+# cambench
 
-A tiny C++/OpenCV benchmarking & A/B validation tool for simple video pipelines.
-It can:
+A tiny **C++20 / OpenCV / yaml-cpp** benchmarking & A/B validation tool for simple video pipelines.
 
-run a fixed image pipeline (resize → blur → Sobel),
+## ✨ Features
+- Run a fixed image pipeline:  
+  `resize → blur → Sobel`
+- Time each stage per frame and write **CSV metrics**
+- Save processed frames for inspection
+- Run **A/B validation** between two runs:
+  - Compare outputs with **PSNR** and **SSIM** thresholds
+  - Generate a markdown **report** with summary stats
 
-time each stage per frame and write CSV metrics,
-
-save processed frames,
-
-run A/B validation between two runs with PSNR/SSIM thresholds and produce a markdown report.
-
-Built with C++20, OpenCV, and yaml-cpp.
+## 🛠️ Built With
+- **C++20**
+- **OpenCV**
+- **yaml-cpp**
