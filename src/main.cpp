@@ -245,6 +245,7 @@ int cmd_run(const std::vector<std::string>& args) {
         }
 
         csv.row(i-1, t_read, t_resize, t_blur, t_sobel, total_ms, resized.cols, resized.rows);
+        
     }
 
     auto summarize = [](std::vector<double> v) {
@@ -270,6 +271,7 @@ int cmd_run(const std::vector<std::string>& args) {
         << "  avg  : " << avg_ms  << " ms  (" << fps_avg << " FPS)\n"
         << "  median: " << med_ms  << " ms  (" << fps_med << " FPS)\n"
         << "  p95  : " << p95_ms  << " ms  (" << fps_p95 << " FPS)\n";
+    return 0;
 }
 
 
