@@ -1,0 +1,9 @@
+input: "../data/2_ppl_running.mp4"
+out: "../out/run_b"
+frames: 300
+warmup: 20
+stages:
+  - { op: resize, width: 640, height: 360 }
+  - { op: gaussian_blur, ksize: 3 }
+  - { op: sobel }
+save: true
