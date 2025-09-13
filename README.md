@@ -18,7 +18,7 @@ A tiny **C++20 / OpenCV / yaml-cpp** benchmarking & A/B validation tool for simp
 
 
 ### 0) Install prerequisites (Ubuntu/WSL)
-```bash
+```
 sudo apt update
 sudo apt install -y build-essential cmake libopencv-dev libyaml-cpp-dev
 ```
